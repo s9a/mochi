@@ -1,0 +1,43 @@
+:root {
+  --moof: pink;
+  --woof: purple;
+}
+
+::selection {
+  background: var(--moof);
+  color: var(--woof); 
+}
+
+:any-link {
+  color: inherit;
+}
+
+:focus {
+  border-color: transparent;
+  outline: thick dotted;
+}
+
+::first-letter {
+  font-weight: bold;
+}
+
+.ouija ::selection,
+.mochi {
+  color: var(--moof);
+  background: var(--woof);
+}
+
+.ouija {
+  background: var(--moof);
+  color: var(--woof); 
+}
+
+.dance {
+  background: linear-gradient(var(--moof), #bae, #bae, var(--woof));
+  color: #323;
+}
+
+.dance ::selection {
+  color: #bae;
+  background: #323;
+}
