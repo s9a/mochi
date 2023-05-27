@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html lang="en-US" class="rose">
+<html lang="en" class="mochi">
 <meta charset="utf-8">
-<title>rose color palette</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mochi color creator sweet</title>
+<meta name="viewport" content="width=device-width">
 <meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="pink">
-<meta name="description" content="CSS romance">
-<link rel="home" href="https://s9a.page">
-<link rel="stylesheet" href="rose.css" media=(color)>
-<link rel="stylesheet" href="prose.css">
+<meta name="theme-color" content="#bae">
+<meta name="description" content="CSS color synastry: contrast ratio checker">
 
-<figure>
-  <h1>rose</h1>
-  <ul>
-    <li>warm coloring
-    <li><code>class="rose"</code>
-    <li><a href="rose.css">simple cascade</a>
-    <li>opensource on <a href="https://github.com/s9a/rose">github</a>
-    <li>colors meet <a href="https://www.w3.org/TR/WCAG/#contrast-enhanced">enhanced contrast</a>
-    <li>roses range via media query
-    <li>featuring
-      <a href="https://contrast-ratio.com/#lightpink-on-%23111">lightpink</a>
-      <a href="https://contrast-ratio.com/#pink-on-%23111">pink</a>
-      <a href="https://contrast-ratio.com/#mistyrose-on-%23111">mistyrose</a>
-    <li><a href="https://s9a.page">romance</a>
-  </ul>
-</figure>
+<style>
+  * { box-sizing: border-box }
+  html { font-size: max(3ch, 2vmax + 3vmin) }
+  body { margin: 0; overflow-wrap: anywhere }
+  div {
+    align-items: center;
+    contain: content;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: calc(100vh / 3);
+  }
+  i { font-size: 0 }
+  input { 
+    color: inherit;
+    background: transparent;
+    border: 0;        
+    border-inline: thick dotted;
+    border-radius: 2em 3em;
+    display: inline-block;
+    font: inherit;
+    margin: auto;
+    max-width: 100%;
+    padding: 1ex 1em;
+  }
+</style>
+
+<link rel="stylesheet" href="mochi.css">
+<link rel="home" href="https://s9a.page">
+<link rel="help" href="https://gka.github.io/chroma.js">
+<link rel="help" href="https://developer.mozilla.org/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">
+<link rel="index" href="https://github.com/s9a/mochi">
+
+<main>
+  <h1 hidden>mochi</h1>
+  <form id="morf">
+    <div class="mochi ouija">
+      <label>
+        <i>color</i>
+        <input name="moof" value="#518">
+      </label>
+    </div>
+    <div class="dance" role="status">
+      <i>ratio</i>
+      <output name="bite" for="moof woof"></output>
+    </div>
+    <div class="mochi">
+      <label>
+        <i>color</i>
+        <input name="woof" value="#ec0">
+      </label>
+    </div>
+  </form>
+</main>
+
+<script src="chroma.js"></script>
+<script src="mochi.js"></script>
