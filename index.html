@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" class="mochi">
+<html lang="en-US" class="mochi" id="?">
 <meta charset="utf-8">
-<title>mochi color creator sweet</title>
+<title>mochi color creator chack</title>
 <meta name="viewport" content="width=device-width">
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#bae">
@@ -19,8 +19,10 @@
     justify-content: center;
     min-height: calc(100vh / 3);
   }
-  i { font-size: 0 }
-  input { 
+  :target .ally { position: static }
+  .aloe { position: absolute; top: -100vh }
+  .ally { position: absolute; left: -100vw }
+  input {
     color: inherit;
     background: transparent;
     border: 0;        
@@ -36,26 +38,30 @@
 
 <link rel="stylesheet" href="mochi.css">
 <link rel="home" href="https://s9a.page">
+<link rel="help" href="https://s9a.page/contrast">
 <link rel="help" href="https://gka.github.io/chroma.js">
+<link rel="help" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color">
 <link rel="help" href="https://developer.mozilla.org/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast">
 <link rel="index" href="https://github.com/s9a/mochi">
 
-<main>
-  <h1 hidden>mochi</h1>
+<main id="uranus">
+  <h1 class="aloe">mochi</h1>
   <form id="morf">
     <div class="mochi ouija">
       <label>
-        <i>color</i>
+        <code class="ally">color</code>
         <input name="moof" value="#518">
       </label>
     </div>
     <div class="dance" role="status">
-      <i>ratio</i>
-      <output name="bite" for="moof woof"></output>
+      <a rel="help" class="charm" href="../contrast">
+        <output name="bite" for="moof woof"></output>
+        <samp class="ally">ratio</samp>
+      </a>
     </div>
     <div class="mochi">
       <label>
-        <i>color</i>
+        <code class="ally">color</code>
         <input name="woof" value="#ec0">
       </label>
     </div>

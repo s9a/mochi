@@ -1,5 +1,6 @@
 :root {
   --moof: pink;
+  --cull: unset;
   --woof: purple;
 }
 
@@ -9,16 +10,38 @@
 }
 
 :any-link {
+  --cull: pointer;
   color: inherit;
+  cursor: var(--cull);
+  text-decoration-style: dotted;
 }
 
 :focus {
   border-color: transparent;
   outline: thick dotted;
+  text-decoration-style: solid;
 }
 
-::first-letter {
+:hover {
+  text-decoration-style: double;
+}
+
+.mochi:active {
+  --cull: grabbing; /* 𖤐 */
+  filter: hue-rotate(72deg);
+}
+
+.charm:active {
+  --cull: cell;
+}
+
+output::first-letter {
   font-weight: bold;
+}
+
+.mochi {
+  cursor: var(--cull);
+  filter: hue-rotate(0deg);
 }
 
 .ouija ::selection,
