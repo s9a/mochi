@@ -1,5 +1,7 @@
-## [mochi color creator sweet](https://s9a.page/mochi)
+## [mochi color creator chack](https://s9a.page/mochi)
 
-*mochi* your [contrast ratio](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast)
-
-
+* [mochi](index.html) your [contrast ratio](https://s9a.page/contrast)
+* [**quest**ion every<b>one</b>](https://s9a.page/mochi#?)
+* `color` your way
+* [`var` composure](mochi.css)
+* [*fun*closure](mochi.js)
