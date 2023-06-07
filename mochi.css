@@ -1,12 +1,19 @@
 :root {
+  --film: hue-rotate(0deg);
   --moof: pink;
-  --cull: unset;
+  --cull: grabbing;
   --woof: purple;
+  --mage: linear-gradient(
+    var(--moof),
+    transparent,
+    transparent,
+    var(--woof)
+  );
 }
 
 ::selection {
   background: var(--moof);
-  color: var(--woof); 
+  color: var(--woof);
 }
 
 :any-link {
@@ -26,12 +33,12 @@
   text-decoration-style: double;
 }
 
-.mochi:active {
-  --cull: grabbing; /* 𖤐 */
-  filter: hue-rotate(72deg);
+:root:active:not(:focus-within) {
+                  /* 𖤐 */
+  --film: hue-rotate(72deg);
 }
 
-.charm:active {
+.charm {
   --cull: cell;
 }
 
@@ -39,9 +46,19 @@ output::first-letter {
   font-weight: bold;
 }
 
-.mochi {
+.flute {
+  --cull: grab;
   cursor: var(--cull);
-  filter: hue-rotate(0deg);
+  filter: var(--film);
+}
+
+.flute:active {
+  --cull: grabbing;
+} 
+
+.cream ::selection {
+  color: #bae;
+  background: #323;
 }
 
 .ouija ::selection,
@@ -55,12 +72,20 @@ output::first-letter {
   color: var(--woof); 
 }
 
-.dance {
-  background: linear-gradient(var(--moof), #bae, #bae, var(--woof));
+.cream {
+  --cull: zoom-in;
+  background: #bae var(--mage);
   color: #323;
 }
 
-.dance ::selection {
-  color: #bae;
-  background: #323;
+.cream:active {
+  --cull: zoom-out;
+}
+
+.cream:active:not(:focus-within) {
+  --mage: linear-gradient(1turn,
+    var(--woof) 0%,
+    var(--woof) 50%,
+    var(--moof) 50%
+  );
 }
