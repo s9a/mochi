@@ -1,6 +1,6 @@
 :root {
   --film: hue-rotate(0deg);
-  --moof: pink;
+  --moof: cornflowerblue;
   --cull: grabbing;
   --woof: purple;
   --mage: linear-gradient(
@@ -74,8 +74,8 @@ output::first-letter {
 
 .cream {
   --cull: zoom-in;
-  background: #bae var(--mage);
-  color: #323;
+  background: purple var(--mage);
+  color: mediumaquamarine;
 }
 
 .cream:active {
